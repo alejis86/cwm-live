@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/cwmtoken/precache-manifest.5a3f4dd5daa9e70024d6c7a87b728f6c.js"
+  "/cwm-live/precache-manifest.0005dbb4e59edd522f4690a88505a74e.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/cwmtoken/index.html", {
+workbox.routing.registerNavigationRoute("/cwm-live/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });

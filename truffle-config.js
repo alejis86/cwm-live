@@ -17,9 +17,20 @@ module.exports = {
           `https://kovan.infura.io/v3/${process.env.INFURA_API_KEY}`
         )
       },
-      gas: 5000000,
-      gasPrice: 25000000000,
+      gas: 1600000,
+      gasPrice: 15000000000,
       network_id: 42
+    },
+    mainnet: {
+      provider: function() {
+        return new HDWalletProvider(
+          process.env.MNEMONIC,
+          `https://mainnet.infura.io/v3/${process.env.INFURA_API_KEY}`
+        )
+      },
+      gas: 1600000,
+      gasPrice: 8000000000,
+      network_id: 1
     }
 
   },
